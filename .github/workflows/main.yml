@@ -22,4 +22,4 @@ jobs:
     - name: Build Docker image
       run: docker build -t galvesb/fastapi-argocd:latest .
     - name: Push Docker image to Docker Hub
-      run: docker push galvesb/my-fastapi-app:latest
+      run: docker push galvesb/fastapi-argocd:latest
