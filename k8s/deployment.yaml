@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-argocd
+spec:
+  selector:
+    matchLabels:
+      app: fastapi-argocd
+  template:
+    metadata:
+      labels:
+        app: fastapi-argocd
+    spec:
+      containers:
+      - name: fastapi-argocd
+        image: fastapi-argocd
+        ports:
+        - containerPort: 8000
