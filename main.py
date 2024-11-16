@@ -10,6 +10,6 @@ app = FastAPI()
 
 @app.get("/")
 async def hello_world():
-    return {"message": "Hello world!"}
+    return {"message": "Hello ArgoCD!"}
 
 
